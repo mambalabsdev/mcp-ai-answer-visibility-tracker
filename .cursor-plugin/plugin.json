@@ -1,0 +1,30 @@
+{
+  "name": "mcp-ai-answer-visibility-tracker",
+  "displayName": "AI Answer Visibility Tracker",
+  "version": "1.0.0",
+  "description": "MCP server for AI Answer Visibility Tracker. Check whether Google AI Overviews, ChatGPT, Claude, Perplexity, and Gemini name and cite a brand for the questions buyers ask: sample rows, named and cited rates per question, competitor rates, cited sources. Runs on Apify. Clay-ready output.",
+  "author": {
+    "name": "Mamba Labs",
+    "email": "labs@mambamindsetgrowth.com"
+  },
+  "homepage": "https://mambabuilt.com",
+  "repository": "https://github.com/mambalabsdev/mcp-ai-answer-visibility-tracker",
+  "license": "MIT",
+  "category": "productivity",
+  "tags": [
+    "ai-visibility",
+    "generative-engine-optimization",
+    "ai-overviews",
+    "chatgpt",
+    "brand-monitoring"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-visibility",
+    "geo",
+    "ai-overviews",
+    "chatgpt"
+  ],
+  "mcpServers": ".mcp.json"
+}

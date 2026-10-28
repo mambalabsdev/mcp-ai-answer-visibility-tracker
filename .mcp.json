@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "mamba-ai-answer-visibility-tracker": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mambalabsdev/mcp-ai-answer-visibility-tracker"
+      ],
+      "env": {
+        "APIFY_TOKEN": "your-apify-token"
+      }
+    }
+  }
+}

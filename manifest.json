@@ -1,0 +1,69 @@
+{
+  "manifest_version": "0.3",
+  "name": "mcp-ai-answer-visibility-tracker",
+  "version": "1.0.0",
+  "description": "MCP server for AI Answer Visibility Tracker. Check whether Google AI Overviews, ChatGPT, Claude, Perplexity, and Gemini name and cite a brand for the questions buyers ask: sample rows, named and cited rates per question, competitor rates, cited sources. Runs on Apify. Clay-ready output.",
+  "author": {
+    "name": "Mamba Labs"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mambalabsdev/mcp-ai-answer-visibility-tracker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-ai-answer-visibility-tracker"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "build/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/build/index.js"
+      ],
+      "env": {
+        "APIFY_TOKEN": "${user_config.apify_token}",
+        "OPENAI_API_KEY": "${user_config.openai_api_key}",
+        "ANTHROPIC_API_KEY": "${user_config.anthropic_api_key}",
+        "PERPLEXITY_API_KEY": "${user_config.perplexity_api_key}",
+        "GEMINI_API_KEY": "${user_config.gemini_api_key}"
+      }
+    }
+  },
+  "user_config": {
+    "apify_token": {
+      "type": "string",
+      "title": "Apify API Token",
+      "description": "Apify API token for running the actor",
+      "sensitive": true,
+      "required": false
+    },
+    "openai_api_key": {
+      "type": "string",
+      "title": "OpenAI API key",
+      "description": "Optional. Your own OpenAI key, for that engine only. Sent to the actor run input, never stored by Mamba Labs.",
+      "sensitive": true,
+      "required": false
+    },
+    "anthropic_api_key": {
+      "type": "string",
+      "title": "Anthropic API key",
+      "description": "Optional. Your own Anthropic key, for that engine only. Sent to the actor run input, never stored by Mamba Labs.",
+      "sensitive": true,
+      "required": false
+    },
+    "perplexity_api_key": {
+      "type": "string",
+      "title": "Perplexity API key",
+      "description": "Optional. Your own Perplexity key, for that engine only. Sent to the actor run input, never stored by Mamba Labs.",
+      "sensitive": true,
+      "required": false
+    },
+    "gemini_api_key": {
+      "type": "string",
+      "title": "Gemini API key",
+      "description": "Optional. Your own Gemini key, for that engine only. Sent to the actor run input, never stored by Mamba Labs.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

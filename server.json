@@ -1,0 +1,57 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.mambabuilt/mcp-ai-answer-visibility-tracker",
+  "description": "Whether AI Overviews, ChatGPT, Claude, Perplexity, and Gemini name and cite a brand.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/mambalabsdev/mcp-ai-answer-visibility-tracker",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mambalabsdev/mcp-ai-answer-visibility-tracker",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "APIFY_TOKEN",
+          "description": "Apify API token from https://console.apify.com/account/integrations",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "OPENAI_API_KEY",
+          "description": "Optional. Your own OpenAI API key, only for that engine.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "ANTHROPIC_API_KEY",
+          "description": "Optional. Your own Anthropic API key, only for that engine.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "PERPLEXITY_API_KEY",
+          "description": "Optional. Your own Perplexity API key, only for that engine.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "GEMINI_API_KEY",
+          "description": "Optional. Your own Google AI Studio (Gemini) API key, only for that engine.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}

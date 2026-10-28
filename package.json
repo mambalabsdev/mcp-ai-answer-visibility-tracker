@@ -1,0 +1,52 @@
+{
+  "name": "@mambalabsdev/mcp-ai-answer-visibility-tracker",
+  "version": "1.0.0",
+  "description": "MCP server for AI Answer Visibility Tracker. Check whether Google AI Overviews, ChatGPT, Claude, Perplexity, and Gemini name and cite a brand for the questions buyers ask: sample rows, named and cited rates per question, competitor rates, cited sources. Runs on Apify. Clay-ready output.",
+  "type": "module",
+  "bin": {
+    "mcp-ai-answer-visibility-tracker": "./build/index.js"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc && chmod +x build/index.js",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-visibility",
+    "generative-engine-optimization",
+    "geo",
+    "ai-overviews",
+    "chatgpt",
+    "perplexity",
+    "brand-monitoring",
+    "apify",
+    "clay"
+  ],
+  "author": "Mamba Labs <labs@mambamindsetgrowth.com>",
+  "license": "MIT",
+  "homepage": "https://apify.com/mambalabs/ai-answer-visibility-tracker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mambalabsdev/mcp-ai-answer-visibility-tracker"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "5.9.3"
+  },
+  "mcpName": "com.mambabuilt/mcp-ai-answer-visibility-tracker"
+}
