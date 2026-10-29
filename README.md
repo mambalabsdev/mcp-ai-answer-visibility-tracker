@@ -109,10 +109,10 @@ Pay per event on Apify, billed to your Apify account. Prices in USD.
 
 | Event | Free plan | Bronze | Silver | Gold |
 |---|---|---|---|---|
-| `ai-overview-sample`, one Google result page read for one question | $0.023 | $0.02185 | $0.0207 | $0.01955 |
+| `ai-overview-sample`, one Google result page read for one question | $0.0316 | $0.03002 | $0.02844 | $0.02686 |
 | `answer-sample`, one answer from ChatGPT, Claude, Perplexity, or Gemini on your own key | $0.009 | $0.00855 | $0.0081 | $0.00765 |
 | `question-summary`, one rates row per question and engine | $0.003 | $0.00285 | $0.0027 | $0.00255 |
-| `apify-actor-start`, per run start | $0.001 | $0.001 | $0.001 | $0.001 |
+| `apify-actor-start`, per run start | $0.001082 | $0.001082 | $0.001082 | $0.001082 |
 
 Deferred Google samples, blocked pages, engine errors, the brand rates rows, and refused input are free.
 
